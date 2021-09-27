@@ -1,6 +1,12 @@
-import { removeDuplicates } from './arrays/Array.js';
+import { removeDuplicates, isValueInArray } from './arrays/Array.js';
 
-console.log('TESTING REMOVE DUPLICATES ==>');
+console.log('execute removeDuplicates() ==>');
 const arrayDuplicated = [1, 2, 3, 4, 4, 5, 5, 6];
 console.log(removeDuplicates(arrayDuplicated));
-console.log('END OF REMOVE DUPLICATES <==');
+console.log('finish removeDuplicates()  <==');
+
+console.log('execute isValueInArray() ==>');
+const names = ['Limon', 'Mahbub', 'Alam', 'Tanvir'];
+const isInclude = isValueInArray('e', names);
+console.log(isInclude);
+console.log('finish isValueInArray()  <==');

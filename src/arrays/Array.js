@@ -3,7 +3,4 @@
 // console.log(removeDuplicates(arrayDuplicated));
 // Result: [ 1, 2, 3, 4, 5, 6 ];
 export const removeDuplicates = (arr) => [...new Set(arr)];
-
-export function send() {
-  return true;
-}
+export const isValueInArray = (value, arr) => arr.includes(value);
