@@ -1,0 +1,32 @@
+{
+  "name": "js-snippets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon ./src/index.js",
+    "inspect": "nodemon --inspect ./src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mknparreira/js-snippets.git"
+  },
+  "author": "Maikon Parreira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mknparreira/js-snippets/issues"
+  },
+  "homepage": "https://github.com/mknparreira/js-snippets#readme",
+  "dependencies": {
+    "eslint": "^7.32.0",
+    "nodemon": "^2.0.13"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-prettier": "^4.0.0"
+  }
+}
