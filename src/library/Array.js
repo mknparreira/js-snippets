@@ -1,12 +1,5 @@
-// You can easily remove duplicates with Set in JavaScript. Its a life saver.
-// const arrayDuplicated = [1, 2, 3, 4, 4, 5, 5, 6];
-// console.log(removeDuplicates(arrayDuplicated));
-// Result: [ 1, 2, 3, 4, 5, 6 ];
 export const removeDuplicates = (arr) => [...new Set(arr)];
 export const isValueInArray = (value, arr) => arr.includes(value);
-
-//   example: arrayCountValues([ 3, 5, 3, "foo", "bar", "foo" ])
-//   returns: {3:2, 5:1, "foo":2, "bar":1}
 export function arrayCountValues(array) {
   const tmpArr = {};
   let key = '';
@@ -44,3 +37,9 @@ export function arrayCountValues(array) {
   }
   return tmpArr;
 }
+
+export const arrayMerge = (arr1, arr2) => [...arr1, ...arr2];
+export const arrayIntersect = (arr1, arr2) => [...new Set(arr1)].filter((item) => arr2.includes(item));
+
+// Remove false values when processing data. In Javascript, false values are false, 0, “”, null, NaN, undefined.
+export const removeFalseValues = (arr) => arr.filter(Boolean);
