@@ -40,6 +40,8 @@ export function arrayCountValues(array) {
 
 export const arrayMerge = (arr1, arr2) => [...arr1, ...arr2];
 export const arrayIntersect = (arr1, arr2) => [...new Set(arr1)].filter((item) => arr2.includes(item));
+export const arraySortByAsc = (arr) => arr.slice().sort((a, b) => a - b);
+export const arraySortByDesc = (arr) => arr.slice().sort((a, b) => b - a);
 
 // Remove false values when processing data. In Javascript, false values are false, 0, “”, null, NaN, undefined.
 export const removeFalseValues = (arr) => arr.filter(Boolean);
