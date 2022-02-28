@@ -10,7 +10,7 @@ import {
 } from './library/Array.js';
 
 import displayValuesAsObject from './library/Console.js';
-import convertArrayToAnObject from './library/Object.js';
+import { convertArrayToAnObject, isObject, compareObjects } from './library/Object.js';
 import { isNumber, averageNum } from './library/Number.js';
 
 console.info('---------- Remove duplicated values inside an array ----------');
@@ -136,3 +136,12 @@ console.log(arraySortByAsc(arrSortAsc));
 console.info('---------- Array sort by Desc ----------');
 const arrSortDesc = [25, 13, 6, 8, 14, 59, 56, 2, 40];
 console.log(arraySortByDesc(arrSortDesc));
+
+console.info('---------- Is object ----------');
+const premierLeagueClub = { name: 'Chelsea', points: 7 };
+console.log(isObject(premierLeagueClub));
+
+console.info('---------- Compare objects ----------');
+const premierLeagueClubB = { name: 'Arsenal', points: 7 };
+const premierLeagueClubC = { name: 'City', points: 7 };
+console.log(compareObjects(premierLeagueClubB, premierLeagueClubC));
