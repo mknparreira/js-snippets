@@ -21,7 +21,8 @@
   "homepage": "https://github.com/mknparreira/js-snippets#readme",
   "dependencies": {
     "eslint": "^7.32.0",
-    "nodemon": "^2.0.13"
+    "nodemon": "^2.0.13",
+    "@faker-js/faker": "^6.0.0-alpha.7"
   },
   "devDependencies": {
     "eslint-config-airbnb-base": "^14.2.1",
