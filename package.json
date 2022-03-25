@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon ./src/index.js",
-    "inspect": "nodemon --inspect ./src/server.js",
+    "start": "nodemon ./src/.",
+    "inspect": "nodemon --inspect ./src/.",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,8 +21,7 @@
   "homepage": "https://github.com/mknparreira/js-snippets#readme",
   "dependencies": {
     "eslint": "^7.32.0",
-    "nodemon": "^2.0.13",
-    "@faker-js/faker": "^6.0.0-alpha.7"
+    "nodemon": "^2.0.13"
   },
   "devDependencies": {
     "eslint-config-airbnb-base": "^14.2.1",

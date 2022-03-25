@@ -1,4 +1,3 @@
-const convertArrayToAnObject = (arr) => ({ ...arr });
 const isObject = (obj) => (Object.prototype.toString.call(obj) === '[object Object]');
 
 function compareObjects(obj1, obj2) {
@@ -29,4 +28,4 @@ function compareObjects(obj1, obj2) {
   return false;
 }
 
-export { convertArrayToAnObject, isObject, compareObjects };
+export { isObject, compareObjects };
